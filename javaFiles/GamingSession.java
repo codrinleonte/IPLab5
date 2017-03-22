@@ -1,17 +1,23 @@
+//Clasa Gaming Session
+
+
 import java.util.Vector;
 
 public class GamingSession {
 
-  public GamingSession instance;
+  private static GamingSession instance=new GamingSession();
 
-      public Vector  myMenu;
-      public Vector  myMenu;
+  private GamingSession(){
 
-  public void GamingSession() {
   }
 
-  public GamingSession getInstance() {
-  return null;
+  public static GamingSession getInstance() {
+        return instance;
+  }
+
+  protected static void demoMethod(){
+      System.out.println("demo for singleton");
   }
 
 }
+
