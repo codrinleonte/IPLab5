@@ -3,18 +3,17 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   Menu.java
 
+import java.util.Vector;
 
-public class Menu
-{
+public class Menu {
 
-    public Menu()
-    {
+
+    private int highScore;
+
+    public static void main(String[] args) {
+
+        GamingSession sesiune=GamingSession.getInstance();
+        sesiune.demoMethod();
     }
 
-    public static void main(String args1[])
-    {
-    }
-
-    public GamingSession newGame;
-    public int highScore;
 }
